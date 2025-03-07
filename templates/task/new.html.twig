@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer une nouvelle tâche{% endblock %}
+
+{% block body %}
+    <div class="container mt-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="card-title mb-4">Créer une nouvelle tâche</h1>
+
+                {{ include('task/_form.html.twig') }}
+
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="{{ path('app_task_index') }}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Retour à la liste
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
